@@ -1,13 +1,28 @@
 .framer {
+    .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--red);
+        transform-origin: 0%;
+    }
+
+    .icons {
+        border: none;
+        background: none;
+    }
+
     .button {
         width: 70px;
         height: 40px;
-        background-color: rgba(0, 255, 0, 0.4);
+        background-color: darkviolet;
         display: flex;
         border-radius: 50px;
         padding: 5px;
         cursor: pointer;
-        border:none;
+        border: none;
     }
 
     .switch[data-isOn="false"] {
@@ -18,7 +33,7 @@
         justify-content: flex-end;
     }
 
-    .handle{
+    .handle {
         width: 30px;
         height: 30px;
         background-color: white;
