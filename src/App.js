@@ -1,22 +1,27 @@
 import "./App.css";
 
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Skills from "./pages/skills";
-import Animations from "./pages/animations";
+import { createTheme, ThemeProvider } from "@material-ui/core";
+import { Provider } from "react-redux";
+import store from "./store";
+
+import Layout from "./layout";
 
 import { createBrowserHistory } from "history";
 
-function App() {
-  const history = createBrowserHistory();
+const theme = createTheme();
 
+function App() {
   return (
-    <Routes history={history}>
-      <Route path="/" element={<Skills />} />
-      <Route path="/skill" element={<Skills />} />
-      <Route path="/animation" element={<Animations />} />
-    </Routes>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Routes>
+          <Route path="*" element={<Layout />} />
+        </Routes>
+      </ThemeProvider>
+    </Provider>
   );
 }
 
