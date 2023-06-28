@@ -12,15 +12,22 @@ import {
   Typography
 } from '@mui/material';
 
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import { motion,useScroll,useSpring } from "framer-motion";
 
 function Layout() {
   useEffect(() => {
   }, []);
 
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
     <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml:5 }}>
