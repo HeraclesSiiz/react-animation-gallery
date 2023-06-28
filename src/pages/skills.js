@@ -1,5 +1,5 @@
 import "./page.scss";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import {
   Grid,
@@ -9,18 +9,8 @@ import {
 
 import {
   motion,
-  LayoutGroup,
-  LazyMotion, domAnimation, m,
   useScroll, useSpring,
-  AnimatePresence
 } from 'framer-motion';
-
-//layout spring
-const layout_spring = {
-  type: "spring",
-  stiffness: 2000,
-  damping: 60
-};
 
 export default function Skills(props) {
   const { scrollYProgress } = useScroll();
@@ -39,8 +29,6 @@ export default function Skills(props) {
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
-        // sx={{ scaleX: scrollYProgress }}
-      // sx={{ scaleX }}
       />
       <Grid item container direction="row">
         <Grid item md={3}></Grid>
