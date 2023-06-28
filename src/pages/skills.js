@@ -2,11 +2,7 @@ import "./page.scss";
 import React, { useEffect, useState } from 'react';
 
 import {
-  AppBar,
-  Toolbar,
   Grid,
-  Paper,
-  Button,
   Typography
 } from '@mui/material';
 

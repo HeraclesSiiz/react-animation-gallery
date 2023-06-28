@@ -23,16 +23,7 @@ function Layout() {
     <>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml:5 }}>
             Web | Mobile Developer
           </Typography>
           <Button variant="contained" sx={{m:1}} color="info"><Link to="skills" style={{color:'white'}}>skills</Link></Button>
