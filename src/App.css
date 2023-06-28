@@ -1,5 +1,7 @@
 @import url("https://fonts.google.com");
 
+
+
 .App {
   text-align: center;
 }
@@ -31,13 +33,13 @@ h1 {
   display: flex;
 }
 
-.progress-bar{
+.scroll-progress-bar{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
-  background: var(--red);
+  height: 5px;
+  background: red;
   transform-origin: 0%;
   z-index: 9999;
 }

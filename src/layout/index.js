@@ -27,7 +27,7 @@ function Layout() {
 
   return (
     <>
-      <motion.div className="progress-bar" style={{ scaleX }} />
+      <motion.div className="scroll-progress-bar" style={{ scaleX }} />
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml:5 }}>
