@@ -27,7 +27,6 @@ function Layout() {
 
   return (
     <>
-      <motion.div className="scroll-progress-bar" style={{ scaleX }} />
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml:5 }}>
@@ -38,6 +37,7 @@ function Layout() {
           <Button variant="contained" sx={{m:1}} color="info"><Link to="animations" style={{color:'white'}}>animations</Link></Button>
         </Toolbar>
       </AppBar>
+      <motion.div className="scroll-progress-bar" style={{ scaleX }} />
       <Suspense>
         <Routes>
           {routes.map((route, idx) => {

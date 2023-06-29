@@ -33,13 +33,14 @@ h1 {
   display: flex;
 }
 
-.scroll-progress-bar{
+.scroll-progress-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 5px;
-  background: red;
+  background: linear-gradient(45deg, yellow, red);
+  ;
   transform-origin: 0%;
   z-index: 9999;
 }
