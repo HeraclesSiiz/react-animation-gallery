@@ -4,5 +4,6 @@ import Transform from './transform';
 import ScrollTrigger from './scrolltrigger';
 import Morphing from './morphing';
 import Accordion from './accordion';
+import { Notification } from './notification';
 
-export { Order, Menu, Transform, ScrollTrigger, Morphing, Accordion }
+export { Order, Menu, Transform, ScrollTrigger, Morphing, Accordion, Notification }

@@ -1,0 +1,56 @@
+.notification {
+
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    li {
+        width: 300px;
+        background: blue;
+        margin: 10px;
+        flex: 0 0 100px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    button {
+        outline: none;
+        cursor: pointer;
+    }
+
+    button.add {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 28px;
+        background: blue;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button.close {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        background: blue;
+        border: none;
+    }
+}

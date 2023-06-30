@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import { Grid, Typography } from "@mui/material";
 
-import { Order, Menu, Transform, ScrollTrigger, Morphing, Accordion } from "./components/framermotions";
+import { Order, Menu, Transform, ScrollTrigger, Morphing, Accordion, Notification } from "./components/framermotions";
 
 export default function Animations(props) {
     return (
@@ -30,6 +30,7 @@ export default function Animations(props) {
                     <ScrollTrigger />
                 </Grid>
             </Grid>
+            <Notification />
         </>
     );
 }
