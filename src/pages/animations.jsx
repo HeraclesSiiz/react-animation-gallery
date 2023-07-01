@@ -12,22 +12,22 @@ import {
     Accordion,
     Notification,
     Drawing,
-    DrawingText
+    DrawingText,
+    SvgCheckbox,
+    SvgLogo
 } from "./components/framermotions";
 
 import { useInView } from "framer-motion";
 
-function Section( props) {
+function Section(props) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-
-    console.log(props)
 
     return (
         <section {...props} ref={ref}>
             <span
                 style={{
-                    width:'100%',
+                    width: '100%',
                     transform: isInView ? "none" : "translateX(-200px)",
                     opacity: isInView ? 1 : 0,
                     transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
@@ -43,6 +43,7 @@ export default function Animations(props) {
     return (
         <>
             <Menu />
+            {/* <SvgLogo /> */}
             <Section className="drawing">
                 <Grid container direction={"column"}>
                     <Grid item>
@@ -55,6 +56,9 @@ export default function Animations(props) {
             </Section>
             <Section className="transform">
                 <Transform />
+            </Section>
+            <Section className="svgcheckbox">
+                <SvgCheckbox />
             </Section>
             <Section className="accordion">
                 <Accordion />

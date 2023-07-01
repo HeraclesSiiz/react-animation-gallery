@@ -1,20 +1,5 @@
 import { motion } from "framer-motion";
 
-const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i) => {
-        const delay = 1 + i * 0.5;
-        return {
-            pathLength: 1,
-            opacity: 1,
-            transition: {
-                pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-                opacity: { delay, duration: 0.01 }
-            }
-        };
-    }
-};
-
 export default function DrawingText() {
     return (
         <motion.svg
@@ -36,7 +21,7 @@ export default function DrawingText() {
                 }}
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
-                stroke="#00cc88"
+                stroke="#ffff00"
                 strokeDasharray="0 1"
                 fill="none"
             />

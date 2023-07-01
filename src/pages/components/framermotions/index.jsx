@@ -7,5 +7,19 @@ import Accordion from './accordion';
 import { Notification } from './notification';
 import Drawing from './drawing';
 import DrawingText from './drawingtext';
+import { SvgCheckbox } from './svgcheckbox';
+import { SvgLogo } from './svglogo';
 
-export { Order, Menu, Transform, ScrollTrigger, Morphing, Accordion, Notification, Drawing, DrawingText }
+export {
+    Order,
+    Menu,
+    Transform,
+    ScrollTrigger,
+    Morphing,
+    Accordion,
+    Notification,
+    Drawing,
+    DrawingText,
+    SvgCheckbox,
+    SvgLogo
+}
