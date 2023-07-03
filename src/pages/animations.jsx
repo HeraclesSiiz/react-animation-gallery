@@ -43,7 +43,7 @@ export default function Animations(props) {
     return (
         <>
             <Sidebar />
-            {/* <SvgLogo /> */}
+            <SvgLogo />
             <Section className="drawing">
                 <Grid container direction={"column"}>
                     <Grid item>
