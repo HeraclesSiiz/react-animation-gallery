@@ -1,5 +1,5 @@
 import Order from './order';
-import Menu from './menu';
+import Sidebar from './sidebar';
 import Transform from './transform';
 import ScrollTrigger from './scrolltrigger';
 import Morphing from './morphing';
@@ -12,7 +12,7 @@ import { SvgLogo } from './svglogo';
 
 export {
     Order,
-    Menu,
+    Sidebar,
     Transform,
     ScrollTrigger,
     Morphing,

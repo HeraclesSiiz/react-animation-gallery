@@ -5,7 +5,7 @@ import { Grid, Typography } from "@mui/material";
 
 import {
     Order,
-    Menu,
+    Sidebar,
     Transform,
     ScrollTrigger,
     Morphing,
@@ -42,7 +42,7 @@ function Section(props) {
 export default function Animations(props) {
     return (
         <>
-            <Menu />
+            <Sidebar />
             {/* <SvgLogo /> */}
             <Section className="drawing">
                 <Grid container direction={"column"}>

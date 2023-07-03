@@ -26,7 +26,7 @@ const sidebar = {
   }
 };
 
-export default function Menu() {
+export default function Sidebar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
